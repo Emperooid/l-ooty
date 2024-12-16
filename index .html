@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>looty clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            L <span>O</span> <span>O</span> T Y
+        </div>
+
+        <div class="hamburger" id="harmbuger">
+            <img src="rb_54805.png" alt="globe" />
+        </div>
+
+        <nav class="nav-links" id="nav-links"">
+      <ul >
+        <li><a href=" #home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">works</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <script>
+            
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+        </script>
+    </nav>
+
+    <div id="container">
+        <div class="letter" id="l">L</div>
+        <img src="rb_54805.png" class="globe" id="o1" alt="Globe O" />
+        <img src="rb_54805.png" class="globe" id="o2" alt="Globe O" />
+        <div class="letter" id="t">T</div>
+        <div class="letter" id="y">Y</div>
+    </div>
+    <script>
+
+        const tl = gsap.timeline();
+
+        // Animate the "L"
+        tl.fromTo("#l",
+            { x: "-100px", opacity: 0 },
+            { x: "0px", opacity: 1, duration: 1 }
+        )
+            .to("#l",
+                { scale: 1, duration: 0.5 }
+            );
+
+        // Animate the first globe (O1)
+        tl.to("#o1",
+            { y: "50px", opacity: 1, scale: 1, duration: 1 }
+        );
+
+        // Animate the second globe (O2)
+        tl.to("#o2",
+            { y: "50px", opacity: 1, scale: 1, duration: 1 }
+        );
+
+        // Animate the "T"
+        tl.fromTo("#t",
+            { x: "100px", opacity: 0 },
+            { x: "0px", opacity: 1, duration: 1 }
+        );
+
+        // Animate the "Y"
+        tl.fromTo("#y",
+            { y: "-50px", opacity: 0 },
+            { y: "0px", opacity: 1, duration: 1 }
+        );  
+    </script>
+
+    <div class="slider-1">
+        <h1>THE FUTURE AWAITS YOUR RETURN THE FUTURE </h1>
+    </div>
+    <div class="video-section">
+        <video src="12481538_1920_1080_30fps.mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="as-seen">
+        <h1>AS SEEN IN</h1>
+        <div class="log-pic">
+            <img src="5978565232055927960.jpg" alt="" />
+            <img src="5978565232055927962.jpg" alt="" />
+            <img src="5978565232055927961.jpg" alt="" />
+            <img src="5978565232055927964.jpg" alt="" />
+            <img src="5978565232055927965.jpg" alt="" />
+            <img src="5978565232055927966.jpg" alt="" />
+        </div>
+    </div>
+    <div class="slider-2">
+        <div class="slider-inner">
+            <img src="5978565232055927960.jpg" alt="" />
+            <img src="5978565232055927962.jpg" alt="" />
+            <img src="5978565232055927961.jpg" alt="" />
+            <img src="5978565232055927964.jpg" alt="" />
+            <img src="5978565232055927965.jpg" alt="" />
+            <img src="5978565232055927966.jpg" alt="" />
+            <img src="5978565232055927960.jpg" alt="" />
+            <img src="5978565232055927962.jpg" alt="" />
+            <img src="5978565232055927961.jpg" alt="" />
+            <img src="5978565232055927964.jpg" alt="" />
+            <img src="5978565232055927965.jpg" alt="" />
+            <img src="5978565232055927966.jpg" alt="" />
+            <img src="5978565232055927960.jpg" alt="" />
+            <img src="5978565232055927962.jpg" alt="" />
+            <img src="5978565232055927961.jpg" alt="" />
+            <img src="5978565232055927964.jpg" alt="" />
+            <img src="5978565232055927965.jpg" alt="" />
+            <img src="5978565232055927966.jpg" alt="" />
+        </div>
+    </div>
+
+    <div class="loot">
+        <h1>Looty is more than a collaborative Arts collective</h1>
+    </div>
+    <div class="about">
+        <div class="about-1">
+            about looty
+        </div>
+        <div class="about-2">
+            <p>
+                Created by Chidi Nwaubani in 2021, LOOTY is a dynamic fusion of
+                creativity and technology that sparks conversations in the art world,
+                Web3, and beyond. From reclaiming seized stolen artwork through
+                innovative blockchain and NFT technology to crafting bespoke 3D
+                experiences, LOOTY is pioneering new portals to enhance access and
+                education. Empowered by Innovation and culture while embracing
+                disruption, setting the stage for a future where art, tech,and
+                imagination unite in unprecedented ways.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="mission">
+        <div class="mission-1">
+            <p>mission statement</p>
+        </div>
+        <div class="mission-2">
+            <p>
+                Driven by provocative and daring interventions, LOOTY challenges the inherent hypocrisy of
+                colonial, economic, political, and cultural systems. Committed to innovation, we continuously
+                reimagine and redefine the digital sphere, ensuring every touchpoint reflects our core values
+                and vision for a more equitable world
+            </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>
+        <h1>
+            Represented
+            at global events
+        </h1>
+        <div class="main-content">
+            <h1>
+                REPRESENTED AT GLOBAL EVENTS
+            </h1>
+            <p>
+                UP COMING EVENTS
+            </p>
+            <hr />
+
+            <div class="event">
+                <div class="event-name">
+                    NBOLIT FESTIVAL
+                </div>
+                <div class="event-date">
+                    28th June 2024
+                </div>
+                <div class="event-location">
+                    Nairobi, Kenya
+                </div>
+                <div>
+                    past events
+                </div>
+                <hr>
+
+
+            </div>
+
+
+            <script src="app.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</body>
+
+</html>
